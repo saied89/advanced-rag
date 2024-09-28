@@ -3,3 +3,6 @@ openai     # Needed for the embedding and LLM calls
 numpy      # Needed for speeding up mathematical calculations
 scikit-learn    # Needed for the cosine distance calculations
 python-dotenv # To handle secrets such as API keys
+open-webui # To provide simple UI to interact with the LLM models
+qdrant-client # Local vector database
+sentence-transformers # sentence parsing and embedding 

@@ -6,3 +6,6 @@ python-dotenv # To handle secrets such as API keys
 open-webui # To provide simple UI to interact with the LLM models
 qdrant-client # Local vector database
 sentence-transformers # sentence parsing and embedding 
+semantic-router==0.0.37 # For semantic chunking
+semantic-router[processing] # For semantic chunking plots
+datasets==2.19.0 # Loading datasets for semantic chunking

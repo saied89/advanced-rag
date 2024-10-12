@@ -6,10 +6,14 @@ python-dotenv # To handle secrets such as API keys
 open-webui # To provide simple UI to interact with the LLM models
 qdrant-client # Local vector database
 sentence-transformers # sentence parsing and embedding 
+sentence_transformers_impl # For the community models
 semantic-router==0.0.37 # For semantic chunking
 semantic-router[processing] # For semantic chunking plots
 datasets==2.19.0 # Loading datasets for semantic chunking
-plotly
+altair
+vegafusion-python-embed>=1.5.0  # For large dataset (TNSE output) for Altair
+vegafusion>=1.5.0               # For large dataset (TNSE output) for Altair
+vl-convert-python>=1.6.0        # For large dataset (TNSE output) for Altair
 nbformat
 ipywidgets
 # For the multi-modal notebook

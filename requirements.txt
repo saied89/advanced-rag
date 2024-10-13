@@ -127,13 +127,17 @@ cohere==4.57
 colbert-ai==0.2.21
     # via open-webui
 colorama==0.4.6
-    # via semantic-router
+    # via
+    #   semantic-chunkers
+    #   semantic-router
 colorclass==2.2.2
     # via oletools
 coloredlogs==15.0.1
     # via onnxruntime
 colorlog==6.8.2
-    # via semantic-router
+    # via
+    #   semantic-chunkers
+    #   semantic-router
 colpali-engine==0.3.1
     # via -r requirements.in
 comm==0.2.2
@@ -545,6 +549,7 @@ numpy==1.26.4
     #   scikit-learn
     #   scipy
     #   seaborn
+    #   semantic-chunkers
     #   semantic-router
     #   sentence-transformers
     #   shapely
@@ -644,7 +649,6 @@ packaging==23.2
     #   matplotlib
     #   onnxruntime
     #   peft
-    #   plotly
     #   pytest
     #   transformers
     #   unstructured-client
@@ -685,8 +689,6 @@ platformdirs==4.3.6
     # via
     #   black
     #   jupyter-core
-plotly==5.24.1
-    # via -r requirements.in
 pluggy==1.5.0
     # via pytest
 portalocker==2.10.1
@@ -758,6 +760,7 @@ pydantic==2.8.2
     #   open-webui
     #   openai
     #   qdrant-client
+    #   semantic-chunkers
     #   semantic-router
 pydantic-core==2.20.1
     # via pydantic
@@ -876,6 +879,7 @@ referencing==0.35.1
 regex==2023.12.25
     # via
     #   nltk
+    #   semantic-chunkers
     #   semantic-router
     #   tiktoken
     #   transformers
@@ -902,7 +906,9 @@ requests==2.32.3
     #   unstructured-client
     #   youtube-transcript-api
 requests-mock==1.12.1
-    # via semantic-router
+    # via
+    #   semantic-chunkers
+    #   semantic-router
 requests-oauthlib==2.0.0
     # via kubernetes
 requests-toolbelt==1.0.0
@@ -939,8 +945,12 @@ scipy==1.14.1
     #   sentence-transformers
 seaborn==0.13.2
     # via -r requirements.in
-semantic-router==0.0.37
+semantic-chunkers==0.0.4
     # via -r requirements.in
+semantic-router==0.0.37
+    # via
+    #   -r requirements.in
+    #   semantic-chunkers
 sentence-transformers==3.0.1
     # via
     #   -r requirements.in
@@ -1002,13 +1012,13 @@ tenacity==8.5.0
     #   langchain
     #   langchain-community
     #   langchain-core
-    #   plotly
     #   stamina
 threadpoolctl==3.5.0
     # via scikit-learn
 tiktoken==0.6.0
     # via
     #   open-webui
+    #   semantic-chunkers
     #   semantic-router
 tokenizers==0.20.0
     # via

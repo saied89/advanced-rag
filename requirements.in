@@ -24,3 +24,4 @@ huggingface_hub[hf_transfer]
 transformers>=4.45.0 
 stamina 
 rich
+bm25s # For Hybrid Search

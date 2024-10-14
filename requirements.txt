@@ -79,6 +79,8 @@ black==24.8.0
     # via open-webui
 blinker==1.8.2
     # via flask
+bm25s==0.2.2
+    # via -r requirements.in
 boto3==1.35.0
     # via open-webui
 botocore==1.35.28
@@ -527,6 +529,7 @@ numpy==1.26.4
     # via
     #   -r requirements.in
     #   accelerate
+    #   bm25s
     #   chroma-hnswlib
     #   chromadb
     #   colpali-engine
@@ -940,6 +943,7 @@ scikit-learn==1.5.2
     #   sentence-transformers
 scipy==1.14.1
     # via
+    #   bm25s
     #   colbert-ai
     #   scikit-learn
     #   sentence-transformers

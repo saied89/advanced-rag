@@ -46,3 +46,22 @@ deeper into the various problems and solutions when building a RAG system in ent
        - Utilizing computer vision techniques to extract information from images and other non-textual elements within documents.
        - Integrating this information with text-based retrieval methods for a more comprehensive search capability.
 
+## Set Up
+
+   To set up the project, you have two options: using `uv` or traditional `pip`.
+
+   **Using [`uv`](https://github.com/astral-sh/uv)**
+
+  1. Install `uv` by running `pip install uv`.
+  2. Create a virtual environment using `uv venv --python 3.12.0`.
+  3. Activate the virtual environment.
+  4. Compile the project dependencies using `uv pip compile requirements.in --output-file requirements.txt`.
+  5. Sync the dependencies using `uv pip sync requirements.txt`.
+
+   **Using traditional `pip`**
+
+  1. Create a virtual environment using your preferred method (e.g., `python -m venv myenv`).
+  2. Activate the virtual environment.
+  3. Install the project dependencies using `pip install -r requirements.txt`.
+
+   Note: The `uv` method is recommended for its speed, ease of use and management of project dependencies. However, the traditional `pip` method is also supported for those familiar with it.

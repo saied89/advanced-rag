@@ -3,6 +3,12 @@
 This repository includes a set of assets that are used in the above course, which dives
 deeper into the various problems and solutions when building a RAG system in enterprise environments.
 
+## Simple RAG Flow
+
+![Naive RAG](images/Naiive_RAG.png)
+
+
+
 ## Jupyter Notebooks
 
 1. [Simple RAG](01_simple_rag.ipynb): This notebook introduces the fundamental concepts and implementation of Retrieval Augmented Generation (RAG).
@@ -14,6 +20,8 @@ deeper into the various problems and solutions when building a RAG system in ent
 7. [Multi Modal Retrieval](07_multimodal_pdf.ipynb): This notebook explore the possibilities of retrieval from images and not limited to text. 
 
 ## Common Problems in RAG Systems and Their Solutions
+
+![Advanced RAG](images/Advanced_RAG.png)
 
 1. **Long Documents**
   - Problem: Difficulty in processing and retrieving information from lengthy documents.

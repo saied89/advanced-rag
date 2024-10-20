@@ -7,8 +7,6 @@ deeper into the various problems and solutions when building a RAG system in ent
 
 ![Naive RAG](images/Naiive_RAG.png)
 
-
-
 ## Jupyter Notebooks
 
 1. [Simple RAG](01_simple_rag.ipynb): This notebook introduces the fundamental concepts and implementation of Retrieval Augmented Generation (RAG).
@@ -21,7 +19,11 @@ deeper into the various problems and solutions when building a RAG system in ent
 
 ## Common Problems in RAG Systems and Their Solutions
 
-![Advanced RAG](images/Advanced_RAG.png)
+The problematic part of a RAG application is usually the retrieval part. The system might retrieve the wrong documents, or only part of them and lead to wrong replies. This is the classical problem in machine learning of the precision-recall-tradeoff.
+
+![Recall Precision Tradeoff](images/Recall_Precision_in_RAG_Diagram.png)
+
+The following list of complexity factors in real-life documents can lead to a decrease in overall retrieval accuracy, and the various techniques that can improve the retrieval performance. 
 
 1. **Long Documents**
   - Problem: Difficulty in processing and retrieving information from lengthy documents.
@@ -53,6 +55,10 @@ deeper into the various problems and solutions when building a RAG system in ent
      - Multi-modal retrieval (see: [07_multimodal_pdf.ipynb](07_multimodal_pdf.ipynb))
        - Utilizing computer vision techniques to extract information from images and other non-textual elements within documents.
        - Integrating this information with text-based retrieval methods for a more comprehensive search capability.
+
+## Advanced RAG System
+
+![Advanced RAG](images/Advanced_RAG.png)
 
 ## Set Up
 

@@ -15,7 +15,8 @@ deeper into the various problems and solutions when building a RAG system in ent
 4. [Reverse Hyde](04_reverse_hyde.ipynb): This notebook explores the Reverse Hyde technique in RAG systems, highlighting its importance in addressing contextual relevance and query ambiguity.
 5. [Contextual Retrieval](05_contextual_retrieval.ipynb): This notebook delves into the strategies for contextual retrieval in RAG systems, emphasizing the effective handling of numerical data and tables.
 6. [Hybrid Search](06_hybrid_search.ipynb): This notebook discusses the integration of hybrid search capabilities in RAG systems, encompassing both temporal relevance and multi-lingual support.
-7. [Multi Modal Retrieval](07_multimodal_pdf.ipynb): This notebook explore the possibilities of retrieval from images and not limited to text. 
+7. [Reranking](07_reranking.ipynb): This notebook discusses the importance of reranking in RAG systems, focusing on techniques to refine the initial retrieval results for more accurate and relevant outputs.
+8. [Multi Modal Retrieval](08_multimodal_pdf.ipynb): This notebook explore the possibilities of retrieval from images and not limited to text. 
 
 ## Common Problems in RAG Systems and Their Solutions
 

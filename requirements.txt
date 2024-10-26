@@ -919,7 +919,10 @@ requests-toolbelt==1.0.0
 rich==13.8.1
     # via
     #   -r requirements.in
+    #   rich-theme-manager
     #   typer
+rich-theme-manager==0.11.0
+    # via -r requirements.in
 rpds-py==0.20.0
     # via
     #   jsonschema

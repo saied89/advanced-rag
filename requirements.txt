@@ -670,6 +670,8 @@ pathspec==0.12.1
     # via black
 pcodedmp==1.2.6
     # via oletools
+pdf2image==1.17.0
+    # via -r requirements.in
 peewee==3.17.6
     # via
     #   open-webui
@@ -685,6 +687,7 @@ pillow==10.4.0
     #   colpali-engine
     #   fpdf2
     #   matplotlib
+    #   pdf2image
     #   python-pptx
     #   rapidocr-onnxruntime
     #   sentence-transformers

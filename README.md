@@ -68,7 +68,7 @@ The following list of complexity factors in real-life documents can lead to a de
    **Using [`uv`](https://github.com/astral-sh/uv)**
 
   1. Install `uv` by running `pip install uv`.
-  2. Create a virtual environment using `uv venv --python 3.12.0`.
+  2. Create a virtual environment using `uv venv --python 3.11.0`.
   3. Activate the virtual environment.
   4. Compile the project dependencies using `uv pip compile requirements.in --output-file requirements.txt`.
   5. Sync the dependencies using `uv pip sync requirements.txt`.

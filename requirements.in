@@ -28,3 +28,4 @@ rich-theme-manager
 bm25s # For Hybrid Search
 PyStemmer # for BM25 Hybrid Search
 pdf2image # for multi modal demo
+pymupdf4llm # For PDF exercise

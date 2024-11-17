@@ -9,7 +9,7 @@ deeper into the various problems and solutions when building a RAG system in ent
 
 ## Jupyter Notebooks
 
-1. [Simple RAG](01_simple_rag.ipynb): This notebook introduces the fundamental concepts and implementation of Retrieval Augmented Generation (RAG).
+1. [Simple RAG](01_simple_rag.ipynb): This notebook introduces the fundamental concepts and implementation of Retrieval Augmented Generation (RAG). 
 2. [Embedding Model](02_embedding_model.ipynb): This notebook examines the role of embedding models in RAG systems, including their applications and limitations.
 3. [Semantic Chunking](03_semantic_chunking.ipynb): This notebook investigates the process of semantic chunking in RAG systems, focusing on its significance in information retrieval.
 4. [Contextual Retrieval](04_contextual_retrieval.ipynb): This notebook delves into the strategies for contextual retrieval in RAG systems, emphasizing the effective handling of numerical data and tables.
@@ -72,6 +72,11 @@ The following list of complexity factors in real-life documents can lead to a de
   3. Activate the virtual environment.
   4. Compile the project dependencies using `uv pip compile requirements.in --output-file requirements.txt`.
   5. Sync the dependencies using `uv pip sync requirements.txt`.
+
+  If the virtual environment doesn't find `pip` or other modules:
+  1. curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py"  # get the pip package
+  2. python3 get-pip.py # Install the pip package
+  3. pip install ipykernel # Install ipykernel to add the support for Jupyter notebooks to VSC
 
    **Using traditional `pip`**
 

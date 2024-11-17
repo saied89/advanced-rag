@@ -1,4 +1,4 @@
-ipykernel  # Needed for the Jupyter notebooks used
+# ipykernel  # Needed for the Jupyter notebooks used
 openai     # Needed for the embedding and LLM calls
 numpy      # Needed for speeding up mathematical calculations
 scikit-learn    # Needed for the cosine distance calculations
@@ -16,8 +16,8 @@ seaborn
 vegafusion-python-embed>=1.5.0  # For large dataset (TNSE output) for Altair
 vegafusion>=1.5.0               # For large dataset (TNSE output) for Altair
 vl-convert-python>=1.6.0        # For large dataset (TNSE output) for Altair
-nbformat
-ipywidgets
+# nbformat
+# ipywidgets
 # For the multi-modal notebook
 colpali_engine>=0.3.1 
 huggingface_hub[hf_transfer] 

@@ -67,16 +67,28 @@ The following list of complexity factors in real-life documents can lead to a de
 
    **Using [`uv`](https://github.com/astral-sh/uv)**
 
-  1. Install `uv` by running `pip install uv`.
-  2. Create a virtual environment using `uv venv --python 3.11.0`.
-  3. Activate the virtual environment.
-  4. Compile the project dependencies using `uv pip compile requirements.in --output-file requirements.txt`.
-  5. Sync the dependencies using `uv pip sync requirements.txt`.
+  ```shell
+  pip install uv  # Install `uv`
+  uv venv --python 3.11   # Create a virtual environment
+  source .venv/bin/activate   # Activate the virtual environment.
+  uv pip compile requirements.in --output-file requirements.txt # Compile the project dependencies
+  uv pip sync requirements.txt  # Sync the dependencies
+  ```
 
   If the virtual environment doesn't find `pip` or other modules:
-  1. curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py"  # get the pip package
-  2. python3 get-pip.py # Install the pip package
-  3. pip install ipykernel # Install ipykernel to add the support for Jupyter notebooks to VSC
+  ```shell
+  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py  # get the pip package
+  python3 get-pip.py # Install the pip package
+  pip install ipykernel # Install ipykernel to add the support for Jupyter notebooks to VSC
+  ```
+
+  To execute the notebooks in a [Jupyter lab](https://jupyter.org/install) environment, you need to add the following commands
+  ```shell
+  python3 -m pip install jupyterlab ipykernel # Install Jupyter Lab and ipykernel to manager kernels for Jupyter
+  python3 -m ipykernel install --user --name=.venv --display-name="Python (.venv)" # Create kernel from the virtual environment
+  jupyter lab
+  ```
+  And select the `Python (.venv)` from the kernel list.
 
    **Using traditional `pip`**
 

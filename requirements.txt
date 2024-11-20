@@ -41,7 +41,9 @@ certifi==2024.8.30
 charset-normalizer==3.3.2
     # via requests
 cohere==4.57
-    # via semantic-router
+    # via
+    #   -r requirements.in
+    #   semantic-router
 colorama==0.4.6
     # via
     #   semantic-chunkers

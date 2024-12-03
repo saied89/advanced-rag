@@ -77,6 +77,9 @@ The following list of complexity factors in real-life documents can lead to a de
   uv pip install requirements.txt  # Sync the dependencies
   ```
 
+  ![Advanced RAG Setup](images/advanced-rag-setup.gif)
+
+
   If the virtual environment doesn't find `pip` or other modules:
   ```shell
   curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py  # get the pip package

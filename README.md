@@ -11,7 +11,7 @@ The course is available on [edX](https://www.edx.org/learn/computer-science/prag
 
 ## Jupyter Notebooks
 
-1. [Simple RAG](01_simple_rag.ipynb): This notebook introduces the fundamental concepts and implementation of Retrieval Augmented Generation (RAG). 
+1. [Simple RAG](01_simple_rag.ipynb): This notebook introduces the fundamental concepts and implementation of Retrieval Augmented Generation (RAG). [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/guyernest/advanced-rag/blob/main/01_simple_rag.ipynb) [![Open In Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/guyernest/advanced-rag/blob/main/01_simple_rag.ipynb) 
 2. [Embedding Model](02_embedding_model.ipynb): This notebook examines the role of embedding models in RAG systems, including their applications and limitations.
 3. [Semantic Chunking](03_semantic_chunking.ipynb): This notebook investigates the process of semantic chunking in RAG systems, focusing on its significance in information retrieval.
 4. [Contextual Retrieval](04_contextual_retrieval.ipynb): This notebook delves into the strategies for contextual retrieval in RAG systems, emphasizing the effective handling of numerical data and tables.
@@ -63,7 +63,7 @@ The following list of complexity factors in real-life documents can lead to a de
 
 ![Advanced RAG](images/Advanced_RAG.png)
 
-## Set Up
+## Set Up Local Jupyter
 
    To set up the project, you have two options: using `uv` or traditional `pip`.
 
@@ -71,10 +71,10 @@ The following list of complexity factors in real-life documents can lead to a de
 
   ```shell
   pip install uv  # Install `uv`
-  uv venv --python 3.11   # Create a virtual environment
+  uv venv --python cpython-3.12.3-macos-aarch64-none   # Create a virtual environment for MacOS with Apple Silicon
   source .venv/bin/activate   # Activate the virtual environment.
   uv pip compile requirements.in --output-file requirements.txt # Compile the project dependencies
-  uv pip sync requirements.txt  # Sync the dependencies
+  uv pip install requirements.txt  # Sync the dependencies
   ```
 
   If the virtual environment doesn't find `pip` or other modules:
@@ -86,7 +86,7 @@ The following list of complexity factors in real-life documents can lead to a de
 
   To execute the notebooks in a [Jupyter lab](https://jupyter.org/install) environment, you need to add the following commands
   ```shell
-  python3 -m pip install jupyterlab ipykernel # Install Jupyter Lab and ipykernel to manager kernels for Jupyter
+  python3 -m pip install jupyterlab # Install Jupyter Lab and ipykernel to manager kernels for Jupyter
   python3 -m ipykernel install --user --name=.venv --display-name="Python (.venv)" # Create kernel from the virtual environment
   jupyter lab
   ```
@@ -99,3 +99,34 @@ The following list of complexity factors in real-life documents can lead to a de
   3. Install the project dependencies using `pip install -r requirements.txt`.
 
    Note: The `uv` method is recommended for its speed, ease of use and management of project dependencies. However, the traditional `pip` method is also supported for those familiar with it.
+
+## Setup in Google Colab
+
+Follow the link to the first hands-on lab: [![Open In Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/guyernest/advanced-rag/blob/main/01_simple_rag.ipynb) 
+
+Before the first cells add the following commands
+
+```
+!git clone https://github.com/guyernest/advanced-rag.git
+%cd advanced-rag
+!pip install -q -r requirements.txt
+```
+
+You might need to restart the Colab runtime at the end of the dependencies installation. Remember to change back to the course folder:
+
+```
+%cd advanced-rag
+```
+
+## Setup in SageMaker Studio Lab
+
+Follow the link to the first hands-on lab: [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/guyernest/advanced-rag/blob/main/01_simple_rag.ipynb)
+
+Clone the GitHub repository when prompted by the service.
+
+Before the first cells add the following commands:
+
+```
+%cd advanced-rag
+!pip install -q -r requirements.txt
+```
